@@ -1,7 +1,6 @@
 import os
 from google import genai
 from django.conf import settings
-# from .config import GEMINI_API_KEY
 from .models import GeneratedEmail
 from datetime import datetime
 
