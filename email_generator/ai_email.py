@@ -1,10 +1,12 @@
 import os
 from google import genai
-from .config import GEMINI_API_KEY
+from django.conf import settings
+# from .config import GEMINI_API_KEY
 from .models import GeneratedEmail
 from datetime import datetime
 
-client = genai.Client(api_key=GEMINI_API_KEY)
+# AIzaSyCesIz0ZW3D8Zb3EwR-MHO_emd-CASDl7s
+client = genai.Client(api_key=settings.GEMINI_API_KEY)
 
 def generate_email(email_type, receiver, purpose, sender):
 
