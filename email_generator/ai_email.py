@@ -5,7 +5,6 @@ from django.conf import settings
 from .models import GeneratedEmail
 from datetime import datetime
 
-# AIzaSyCesIz0ZW3D8Zb3EwR-MHO_emd-CASDl7s
 client = genai.Client(api_key=settings.GEMINI_API_KEY)
 
 def generate_email(email_type, receiver, purpose, sender):
